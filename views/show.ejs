@@ -1,0 +1,34 @@
+<%include ./partials/header%>
+  <div  class="container" style=" padding-top: 100px">
+  	<h1 style="text-align: center; color: blue;"><em>Assignment</em></h1>
+  	
+  	<div class="card" style="margin: 0 auto;width:60%">
+  		
+  		<div class="row"  style="padding:5px">
+  			<div class="col-12">
+  				<p>
+  					<strong><u>CLASS:  </u></strong><%=task.standard%>
+  					<span class="float-right">10 days ago</span>
+  				</p>
+  				<p>
+  				<strong><u>Assignment:  </u></strong><%=task.body%>
+  			    </p>
+           
+  			    <a class="btn btn-sm btn-info" href="#"  >Review</a>
+            <a class="btn btn-sm btn-warning" href="#"  >Update</a>
+            <form id="task-delete" method="POST" action="/dashboard/task/<%=task._id%>?_method=DELETE">
+              <a  class="btn btn-sm btn-danger" href="#"  >Delete</a>
+               <a class="btn btn-sm btn-dark float-right" href="/dashboard/task" ><i>BACK</i></a>
+            </form>
+            
+             
+  			</div>
+
+  		</div>
+  		
+ 
+  	</div>
+    
+  </div>
+
+<%include ./partials/footer%>

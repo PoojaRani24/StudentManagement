@@ -1,0 +1,28 @@
+<%include ./partials/header%>
+  <div  class="container" style=" padding-top: 100px">
+  	<h1 style="text-align: center; color: blue;"><em> Assignment Task</em></h1>
+  	
+  	<div class="card">
+  		<%tasks.forEach(function(task){ %>
+  		<div class="row"  style="padding:5px">
+  			<div class="col-12">
+  				<p>
+  					<strong><u>CLASS:  </u></strong><%=task.standard%>
+  					<span class="float-right">10 days ago</span>
+  				</p>
+  				
+  				<p>
+  				<strong><u>Assignment:  </u></strong><%=task.body%>
+  			    </p>
+  			    <a class="btn btn-sm btn-info" href="/dashboard/task/assignment/<%=task._id%>"  >Read More...</a>
+  			</div>
+  		</div>
+  		<hr>
+  	<%}) %>
+   </div>
+   <a class="btn btn-lg btn-dark" href="/dashboard/task/assignment/new" style="margin-top: 20px;">ADD New Task</a>
+  </div>
+
+  
+
+<%include ./partials/footer%>

@@ -1,0 +1,41 @@
+<% include ./partials/header%>
+
+<div class="container" style="text-align: center; padding-top:8% ">
+	<h1><u> Create a New Student</u> </h1>
+	<div class="container" style="padding-top: 2%; width: 30%">
+	<form id=taskForm action="/dashboard/student" method="POST" >
+		<div class="form-group">
+    	    <input class="form-control" type="text" name="studentimage" placeholder="image Url">
+        </div>
+	<div class="form-group">
+		
+		<input class="form-control" type="text" name="name" placeholder="Name">
+	</div>
+	<div class="form-group">
+		
+		<input class="form-control" type="text" name="standard" placeholder="Class">
+	</div>
+	<div class="form-group">
+		
+		<input class="form-control" type="text" name="mothername" placeholder="Mother's Name">
+	</div>
+	<div class="form-group">
+		
+		<input class="form-control" type="text" name="fathername" placeholder="Father's Name">
+	</div>
+	<div class="form-group">
+		
+		<input class="form-control" type="text" name="number" placeholder="Mobile no.">
+	</div>
+	
+	<div class="form-group">
+		<button class="btn btn-lg btn-info">Submit</button>
+	</div>
+</form>
+</div>
+</div>
+
+
+
+
+<% include ./partials/footer%>

@@ -1,0 +1,53 @@
+img
+ {
+        width:100%;
+      }
+
+ .img-thumbnail
+ {
+ 	padding: 0%;
+ }
+
+ .caption-full
+ {
+ 	padding: 9px;
+ }
+
+ #form-delete
+ {
+ 	display:inline;
+ }
+
+ #task-delete
+ {
+ 	display:inline;
+ }
+
+ #index1{
+ 	height:15em;
+ 	border: 2px solid black;
+ 	margin-bottom: 5em;
+ 	margin-right: 2em;
+ 	background: black;
+ }
+
+ #index2{
+ 	height:15em;
+ 	border: 2px solid black;
+ 	margin-left: 10em;
+ 	margin-bottom: 5em;
+ 	background: black;
+ }
+#index3{
+ 	height:15em;
+ 	border: 2px solid black;
+ 	margin-right: 2em;
+ 	background: black;
+ }
+ #index4{
+ 	height:15em;
+ 	border: 2px solid black;
+ 	margin-left: 10em;
+ 	background: black;
+ }
+

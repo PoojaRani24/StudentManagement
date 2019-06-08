@@ -1,0 +1,46 @@
+<%include ./partials/header %>
+
+<div class="container">
+    <div class="jumbotron" style="padding-top: 10%">
+        <div class="container">
+            <h1>CLASS 4<i class="fas fa-bus-alt"></i> </h1>
+            <p>
+              <em> Student Details:</em>
+            </p>
+            <p>
+              <a class="btn btn-dark btn-large" href="/dashboard/student/new">Add New Student</a>
+            </p>
+        </div>
+    </div>
+    
+    <div  class="row">
+        <div class=" col-12">
+            
+            <p></p>
+        </div>
+    </div>
+
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        <% students.forEach(function(student){ %>
+           <div class=" col-md-4 col-12">
+               <div class="img-thumbnail border border-dark ">
+                     <img src="<%= student.studentimage %>" > 
+                     <div class="caption">
+                         <caption><%= student.name %></caption>
+                    </div>
+                    <p>
+                     <a href="/dashboard/student/class4/<%= student._id %>" class="btn btn-primary">More Info</a>      
+                    </p>
+                </div> 
+             </div>
+        <% }) %>
+    </div>
+    <div class="container">
+         <a style="margin-top: 3%" class="btn btn-sm btn-dark" href="/dashboard/student">Back </a>
+    </div>
+   
+
+</div>
+
+<% include ./partials/footer %>
+
